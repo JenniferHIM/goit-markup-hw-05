@@ -1,6 +1,6 @@
 :root {
   --main-text-color: #757575;
-  --accent-color: #2196f3;
+  --accent-color: rgb(33, 150, 243);
   --title-color: #212121;
   --white: #ffffff;
   --dark-background: #2f303a;
@@ -86,8 +86,7 @@ p {
 .header {
   align-items: center;
   background-color: var(--white);
-  border-bottom: 1px solid #ECECEC;
-    
+  border-bottom: 1px solid #ececec;
 }
 
 .header .logo {
@@ -98,9 +97,8 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
+
   min-height: 80px;
- 
 }
 
 /*Логотип*/
@@ -584,11 +582,7 @@ p {
 .our-projects {
   padding-top: 94px;
 }
-.thumb {
-  position: relative
-  opacity: 1;
-  width: 100%;
-}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -608,18 +602,32 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product-thumb::before {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.5);
-  opacity: 0;
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
 }
 
-.product-thumb:hover::before {
-  opacity: 1;
+.portfolio-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  margin-bottom: 0;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.our-project-card:hover .portfolio-info,
+.our-project-card .link:focus .portfolio-info {
+  transform: translateX(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card-content {
