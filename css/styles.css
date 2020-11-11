@@ -80,6 +80,8 @@ p {
 .link:focus {
   color: var(--accent-color);
   text-decoration: underline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Header*/
@@ -176,11 +178,15 @@ p {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover .email-icon,
 .contact-link:focus {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-line {
@@ -227,6 +233,7 @@ p {
     url("../images/Img.jpg");
   background-color: var(--dark-background);
 }
+
 .hero-container {
   max-width: 690px;
   padding-top: 200px;
@@ -268,6 +275,8 @@ p {
 .button:focus {
   color: var(--white);
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Бэкграунд*/
@@ -439,6 +448,8 @@ p {
 .socialmedia:hover {
   background-color: var(--accent-color);
   fill: var(--white);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Клиенты*/
@@ -464,6 +475,8 @@ p {
 .clients-logo:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Футер*/
@@ -576,6 +589,8 @@ p {
   background-color: var(--button);
   color: var(--title-color);
   border: 1px solid var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Карточки*/
@@ -600,6 +615,8 @@ p {
 .our-project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-thumb {
