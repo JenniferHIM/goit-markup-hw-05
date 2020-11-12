@@ -218,6 +218,21 @@ p {
 /*Специальный синий выделитель для "студия" и "e-mail"*/
 .current {
   color: var(--accent-color);
+  position: relative;
+  padding-bottom: 0;
+}
+
+.current::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--accent-color);
+  margin-top: 28px;
 }
 
 /*Секция героя*/
@@ -624,7 +639,7 @@ p {
   overflow: hidden;
 }
 
-.portfolio-info {
+.portfolio-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -640,8 +655,8 @@ p {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.our-project-card:hover .portfolio-info,
-.our-project-card .link:focus .portfolio-info {
+.our-project-card:hover .portfolio-overlay,
+.our-project-card .link:focus .portfolio-overlay {
   transform: translateX(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
