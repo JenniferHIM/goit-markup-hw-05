@@ -353,6 +353,26 @@ p {
 .about-info:not(:last-child) {
   margin-right: 30px;
 }
+/*Overlay в секции О нас*/
+.about-thumb {
+  position: relative;
+}
+
+.about-overlay {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 27px 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 
 /*Следующие свойства для иконок в Преимущества*/
 .feature > .list-item::before {
