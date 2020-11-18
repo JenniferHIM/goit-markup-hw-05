@@ -152,6 +152,14 @@ p {
   color: var(--title-color);
 }
 
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*Контакты*/
 .auth-nav {
   display: inline-flex;
